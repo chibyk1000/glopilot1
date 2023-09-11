@@ -1,11 +1,12 @@
 import React from "react";
 import { Dimensions, Image, Text, View } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
-const CardMini = () => {
+import { colors } from "../../styles/style";
+const CardMini = ({img, title, price}) => {
   return (
     <View
       style={{
-        backgroundColor: "#d7eaf9af",
+        backgroundColor: colors.lightgrey,
         position: "relative",
         width: Dimensions.get("screen").width / 3.3,
         borderRadius: 20,
@@ -22,14 +23,14 @@ const CardMini = () => {
         style={{ position: "absolute", top: 10, right: 10 }}
       />
       <Image
-        source={require("../../assets/baby-car-seat.png")}
+        source={img}
         style={{ width: 40, height: 40 }}
       />
       <View>
 
         
-        <Text>Toddler seat</Text>
-        <Text style={{ textAlign: "center" }}>+$73</Text>
+        <Text>{title }</Text>
+        <Text style={{ textAlign: "center" }}>{ price}</Text>
       </View>
     </View>
   );

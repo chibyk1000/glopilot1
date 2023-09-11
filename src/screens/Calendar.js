@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, Dimensions, Alert } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
-import DropDownPicker from "react-native-dropdown-picker";
+
 
 import { calendarStyle, homestyle } from "../../styles/style";
 import React, { useState } from "react";
@@ -38,17 +38,17 @@ const CalendarRc = ({ navigation }) => {
 
         <View style={calendarStyle.badgeContainer}>
           <TouchableOpacity style={calendarStyle.badge}>
-            <Text style={{ fontSize: Dimensions.get("screen").fontScale * 14 }}>
+            <Text style={{ fontSize:  14 }}>
               Tomorrow
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={calendarStyle.badge}>
-            <Text style={{ fontSize: Dimensions.get("screen").fontScale * 14 }}>
+            <Text style={{ fontSize: 14 }}>
               Fri - Sun
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={calendarStyle.badge}>
-            <Text style={{ fontSize: Dimensions.get("screen").fontScale * 14 }}>
+            <Text style={{ fontSize:  14 , fontWeight:'400'}}>
               A week Starting monday
             </Text>
           </TouchableOpacity>

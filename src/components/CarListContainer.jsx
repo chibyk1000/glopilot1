@@ -129,7 +129,7 @@ const CarListContainer = ({ navigation }) => {
           </View>
 
           <View style={carListStyle.info}>
-            <EvilIcons name="tag" size={30} color="#54b358" />
+            <EvilIcons name="tag" size={40} color="#54b358" />
             <View
               style={{
                 flex: 1,
@@ -146,8 +146,9 @@ const CarListContainer = ({ navigation }) => {
               </Text>
               <Text
                 style={{
-                  fontSize: Dimensions.get("screen").fontScale * 18,
+                  fontSize: Dimensions.get("screen").fontScale * 15,
                   color: colors.grey,
+                  marginTop:10
                 }}
               >
                 Enjoy a discounted rid to pick up your rental car

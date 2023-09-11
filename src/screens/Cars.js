@@ -3,7 +3,7 @@ import React from "react";
 import { Entypo } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { homestyle, locationStyle } from "../../styles/style";
+import { locationStyle } from "../../styles/style";
 import Divider from "../components/Divider";
 import CarListContainer from "../components/CarListContainer";
 import { TouchableOpacity } from "react-native-gesture-handler";

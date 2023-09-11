@@ -13,7 +13,7 @@ export const homestyle = StyleSheet.create({
   container: {
     flex: 1,
     // backgroundColor: colors.lightgrey,
-    backgroundColor: "#d7eaf9af",
+    backgroundColor: colors.white,
     justifyContent: "space-between",
   },
   hero: {
@@ -22,9 +22,11 @@ export const homestyle = StyleSheet.create({
   },
 
   heroImg: {
-    width: Dimensions.get("screen").width - 100,
+    position: "absolute",
+    zIndex: -1,
+    width: Dimensions.get("screen").width ,
     objectFit: "cover",
-    height: Dimensions.get("screen").height - 200,
+    height: '100%'
   },
 
   heroText: {
@@ -46,13 +48,14 @@ export const homestyle = StyleSheet.create({
     flexDirection: "row",
     backgroundColor: "#fff",
     padding: 5,
-
+borderRadius: 10,
     alignItems: "center",
   },
   recommendationButtonText: {
-    fontWeight: "600",
-    fontSize: Dimensions.get("screen").fontScale * 16,
-    borderRadius: 10,
+    fontWeight: "300",
+    fontSize: Dimensions.get("screen").fontScale * 13,
+  
+
     marginLeft: 10,
   },
 
@@ -100,7 +103,7 @@ export const homestyle = StyleSheet.create({
     width: 30,
   },
   locationButtonTextBold: {
-    fontWeight: "600",
+    fontWeight: "700",
     paddingVertical: 5,
     fontSize: Dimensions.get("screen").fontScale * 16,
   },
@@ -183,7 +186,7 @@ export const calendarStyle = StyleSheet.create({
 export const locationStyle = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#d7eaf9af",
+    backgroundColor: colors.white,
   },
 
   headerContainer: {
@@ -195,7 +198,8 @@ export const locationStyle = StyleSheet.create({
     paddingVertical: 10,
   },
   input: {
-    backgroundColor: "#d7eaf9",
+    backgroundColor: colors.lightgrey,
+    
     fontSize: Dimensions.get("screen").fontScale * 20,
     width: Dimensions.get("screen").width - 50,
     height: 40,
@@ -246,7 +250,7 @@ export const carListStyle = StyleSheet.create({
 
     padding: 10,
 
-    backgroundColor: "#d7eaf9af",
+    backgroundColor: colors.lightgrey,
   },
 
   info: {
@@ -298,7 +302,7 @@ export const carListStyle = StyleSheet.create({
     justifyContent: "space-between",
   },
   footer: {
-    backgroundColor: "#d7eaf9af",
+    backgroundColor: colors.lightgrey,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
@@ -311,6 +315,7 @@ export const carListStyle = StyleSheet.create({
   },
   footerText2: {
     fontSize: 14,
+    color: colors.grey
   },
 });
 
@@ -339,119 +344,11 @@ export const carDetailStyle = StyleSheet.create({
   infoProperty1: {
     padding: 10,
   },
-});
 
-export const reservation = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-  },
-  reserveDetails: {},
-  reservationContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-
-    justifyContent: "space-between",
-  },
-  title: {
-    fontWeight: "bold",
-    fontSize: 16,
-  },
-  reserve: {
-    paddingVertical: 15,
-    paddingLeft: 10,
-    gap: 10,
-    flex: 1,
-    borderBottomColor: "#cccccc",
-    borderBottomWidth: 1,
-  },
-  subtitle: {
-    fontSize: 12.5,
-  },
-  titlegroup: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    gap: 10,
-  },
-  due: {
-    paddingVertical: 15,
-    gap: 10,
-    borderBottomColor: "#cccccc",
-    borderBottomWidth: 1,
-  },
-
-  requirement: {
-    paddingVertical: 15,
-    gap: 15,
-
-    borderBottomColor: "#cccccc",
-    borderBottomWidth: 1,
-  },
-  box: {
-    gap: 5,
-  },
-  terms: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 10,
-    paddingVertical: 20,
-  },
-  link: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  linkText: {
-    color: "royalblue",
-    textDecorationColor: "royalblue",
-    textDecorationLine: "underline",
-    fontWeight: "bold",
-  },
-  card: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 10,
-  },
-  carddetails: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    paddingVertical: 15,
+  buttonTextBold: {
+    fontWeight: "600",
+    paddingVertical: 5,
+    fontSize: Dimensions.get("screen").fontScale * 16,
   },
 });
 
-export const hourlystyle = StyleSheet.create({
-  section: {
-    height: 500,
-    padding: 10,
-    backgroundColor: "#fff",
-  },
-  container: {
-    flex: 1,
-  },
-  hero: {
-    padding: 10,
-
-    height: Dimensions.get("screen").height - 530,
-  },
-
-  sectionTitleText: {
-    fontSize: 20,
-    fontWeight: "bold",
-  },
-
-  listContainer: {},
-
-  listItem: {
-    flexDirection: "row",
-    gap: 10,
-    paddingVertical: 15,
-    alignItems: "center",
-  },
-  listItemText: {
-    fontSize: 16,
-  },
-  buttoncontainer: {
-    marginTop: 100,
-  },
-});

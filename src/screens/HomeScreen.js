@@ -29,8 +29,8 @@ const HomeScreen = ({ navigation }) => {
         </View>
         <Text style={homestyle.heroText}>The Road is yours with GloPilots</Text>
         <Image
-          source={require("../../assets/img.png")}
-          resizeMode="contain"
+          source={require("../../assets/home.png")}
+          resizeMode="cover"
           style={homestyle.heroImg}
           resizeMethod="resize"
         />

@@ -16,7 +16,7 @@ import { Entypo, Ionicons } from "@expo/vector-icons";
 import {
   carDetailStyle,
   colors,
-  homestyle,
+ 
   locationStyle,
 } from "../../styles/style";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -42,7 +42,7 @@ const CarDetails = ({ navigation }) => {
       <ScrollView style={{ flex: 1, paddingBottom: 10 }}>
         <View style={carDetailStyle.info}>
           <Image source={require("../../assets/Nissan-Sentra-1.png")} />
-          <Text style={homestyle.locationButtonTextBold}>
+          <Text style={carDetailStyle.buttonTextBold}>
             Nissan Sentra or similar
           </Text>
 
@@ -116,7 +116,7 @@ const CarDetails = ({ navigation }) => {
             }}
             onPress={() => setSelectd("now")}
           >
-            <Text style={homestyle.locationButtonTextBold}>$79/day</Text>
+            <Text style={carDetailStyle.buttonTextBold}>$79/day</Text>
             <Text style={{ color: "grey", fontSize: 16 }}>Pay now $ save</Text>
             <Text style={{ color: "grey", fontSize: 16 }}>
               Free cancellation up to 48 hours before pickup
@@ -132,7 +132,7 @@ const CarDetails = ({ navigation }) => {
             }}
             onPress={() => setSelectd("later")}
           >
-            <Text style={homestyle.locationButtonTextBold}>$79/day</Text>
+            <Text style={carDetailStyle.buttonTextBold}>$79/day</Text>
             <Text style={{ color: "grey", fontSize: 16 }}>Pay at pick</Text>
             <Text style={{ color: "grey", fontSize: 16 }}>
               Free cancellation anytime
@@ -167,9 +167,21 @@ const CarDetails = ({ navigation }) => {
                 justifyContent: "space-between",
               }}
             >
-              <CardMini />
-              <CardMini />
-              <CardMini />
+              <CardMini
+                img={require("../../assets/baby-car-seat.png")}
+                title={"Toddler seat"}
+                price="+73"
+              />
+              <CardMini
+                img={require("../../assets/baby-car-seat.png")}
+                title={"Booster seat"}
+                price="+73"
+              />
+              <CardMini
+                title={"Infant seat"}
+                img={require("../../assets/baby-car-seat2.png")}
+                price="+73"
+              />
             </View>
           </View>
           <Image
@@ -227,7 +239,7 @@ const CarDetails = ({ navigation }) => {
                 >
                   <View style={locationStyle.listItemContent}>
                     <View>
-                      <Text style={homestyle.locationButtonTextBold}>
+                      <Text style={carDetailStyle.buttonTextBold}>
                         Los Angeles - Airport (California)
                       </Text>
                       <Text
@@ -252,7 +264,7 @@ const CarDetails = ({ navigation }) => {
                 >
                   <View style={locationStyle.listItemContent}>
                     <View>
-                      <Text style={homestyle.locationButtonTextBold}>
+                      <Text style={carDetailStyle.buttonTextBold}>
                         Los Angeles - Airport (California)
                       </Text>
                       <Text
@@ -382,7 +394,7 @@ const CarDetails = ({ navigation }) => {
                 justifyContent: "space-between",
                 alignItems: "center",
                 shadowOffset: { width: -2, height: 4 },
-                shadowColor: "#171717",
+                shadowColor: colors.lightgrey,
                 shadowOpacity: 0.2,
                 shadowRadius: 3,
                 elevation: 20,
@@ -391,7 +403,7 @@ const CarDetails = ({ navigation }) => {
               }}
             >
               <View style={{ gap: 5 }}>
-                <Text style={{ color: "#4460ef", fontWeight: "700" }}>
+                <Text style={{ color: "#4460ef", fontWeight: "700", fontSize:20 }}>
                   $317.61
                 </Text>
                 <Text style={{ color: "#4460ef" }}>$79.40 per day</Text>
